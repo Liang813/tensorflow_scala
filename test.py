@@ -1,3 +1,6 @@
 import tensorflow as tf   
-tf.convert_to_tensor(tf.TensorShape(()))
-tf.random_normal(1)
+try:
+  tf.convert_to_tensor(tf.TensorShape(()))
+  tf.random_normal(1)
+except Exception as e:
+  print(e)
